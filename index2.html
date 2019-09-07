@@ -1,113 +1,98 @@
+<!DOCTYPE html>
 <html>
     <header>
       <title>Rejestracja</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            body {
+                margin-top: 0px;
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+        </style>
     </header>
     <body>
-      <h2>Rejestracja</h2>
+        <h2>Rejestracja</h2>
         <div>
             <form>
-                <div class="form-row">
-                  <div class="col-md-4 mb-3">
+                <div class="form-group">
                     <label for="firstName">Imię</label>
-                    <input type="text" class="form-control is-valid" id="firstName" placeholder="Imię" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <label for="lastName">Nazwisko</label>
-                    <input type="text" class="form-control is-valid" id="lastName" placeholder="Nazwisko" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                  <fieldset class="form-group">
-                      <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
-                        <div class="col-sm-10">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                              Kobieta
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                              Mężczyzna
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-                  <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Adres email</label>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                      </div>
-                      <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Wpisz adres email" aria-describedby="inputGroupPrepend3" required>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                    <label for="inputPassword5">Hasło</label>
-                    <input type="password" id="inputPassword5" class="form-control" placeholder="Hasło" aria-describedby="passwordHelpBlock">
-                    <small id="passwordHelpBlock" class="form-text text-muted">
-                        Min. 8 znaków
-                    </small>
-                </div>
-                <div class="form-row">
-                  <div class="col-md-6 mb-3">
-                    <label for="validationServer03">Miasto</label>
-                    <input type="text" class="form-control is-invalid" id="validationServer03" required>
-                  </div>
-                  <div class="col-md-3 mb-3">
-                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Województwo</label>
-                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                      <option selected>Wybierz...</option>
-                      <option value="1">dolnośląskie</option>
-                      <option value="2">kujawsko-pomorskie</option>
-                      <option value="3">lubelskie</option>
-                      <option value="4">lubuskie</option>
-                      <option value="5">łódzkie</option>
-                      <option value="6">małopolskie</option>
-                      <option value="7">mazowieckie</option>
-                      <option value="8">opolskie</option>
-                      <option value="9">podkarpackie</option>
-                      <option value="10">podlaskie</option>
-                      <option value="11">pomorskie</option>
-                      <option value="12">śląskie</option>
-                      <option value="13">świętokrzyskie</option>
-                      <option value="14">warmińsko-mazurskie</option>
-                      <option value="15">wielkopolskie</option>
-                      <option value="16">zachodniopomorskie</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3 mb-3">
-                    <label for="validationServer05">Kod Pocztowy</label>
-                    <input type="text" class="form-control is-invalid" id="validationServer05"  required>
-                  </div>
+                    <input type="text" class="form-control" id="firstName" placeholder="Imię">
                 </div>
                 <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
-                    <label class="form-check-label" for="invalidCheck3">
-                      Akceptuję <a href="#" class="stretched-link">regulamin</a>
-                    </label>
-                  </div>
+                    <label for="lastName">Nazwisko</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Nazwisko">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck4" required>
-                    <label class="form-check-label" for="invalidCheck3">
-                        Wyrażam zgodę na otrzymywanie informacji marketingowych.
-                    </label>
-                  </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
+                        <div class="col-sm-10">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                                <label class="custom-control-label" for="customRadio1">Kobieta</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Mężczyzna</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="email">Adres email</label>
+                    <input type="email" class="form-control" id="email"  placeholder="Enter email">
                 </div>
-                <button class="btn btn-primary" type="submit">Rejestruj</button>
-              </form>
-        </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Hasło">
+                    <small id="passwordHelp" class="form-text text-muted">Min. 8 znaków</small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="city">Miasto</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="state">Województwo</label>
+                        <select id="state" class="custom-select">
+                            <option selected>Wybierz...</option>
+                            <option value="1">dolnośląskie</option>
+                            <option value="2">kujawsko-pomorskie</option>
+                            <option value="3">lubelskie</option>
+                            <option value="4">lubuskie</option>
+                            <option value="5">łódzkie</option>
+                            <option value="6">małopolskie</option>
+                            <option value="7">mazowieckie</option>
+                            <option value="8">opolskie</option>
+                            <option value="9">podkarpackie</option>
+                            <option value="10">podlaskie</option>
+                            <option value="11">pomorskie</option>
+                            <option value="12">śląskie</option>
+                            <option value="13">świętokrzyskie</option>
+                            <option value="14">warmińsko-mazurskie</option>
+                            <option value="15">wielkopolskie</option>
+                            <option value="16">zachodniopomorskie</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="zipCode">Kod pocztowy</label>
+                        <input type="text" class="form-control" id="zipCode">
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="statuteCheck" >
+                    <label class="custom-control-label" for="statuteCheck">Akceptuję <a href="statute.html" target="_blank">regulamin</a></label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="adverbCheck" checked = "">
+                    <label class="custom-control-label" for="adverbCheck">Wyrażam zgodę na otrzymywanie informacji marketingowych</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Rejestruj</button>
+            </form>
+         </div>
     </body>
 </html>
